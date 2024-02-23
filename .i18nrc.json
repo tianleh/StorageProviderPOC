@@ -1,0 +1,7 @@
+{
+  "prefix": "acsUser",
+  "paths": {
+    "acsUser": "."
+  },
+  "translations": ["translations/ja-JP.json"]
+}
