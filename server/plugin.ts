@@ -31,11 +31,9 @@ export class AcsUserPlugin implements Plugin<AcsUserPluginSetup, AcsUserPluginSt
     this.logger.info('*******acsUser: Setup');
     const router = core.http.createRouter();
 
-    if (!!applicationConfig) {
-      console.log('********* does exist');
-    } else {
-      console.log('********* does not exist');
-    }
+    const getFunc = applicationConfig.getConfigurationClient;
+
+    console.log(`*** getFunc is ${getFunc}`);
 
     // const client = new MyClient();
 
